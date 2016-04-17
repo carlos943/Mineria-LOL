@@ -71,10 +71,10 @@
 				<p ng-repeat="game in games">
 					{{ game.championId }},
 					{{ game.teamId }},
-					{{ game.rol }}
+					{{ game.rol }},
 					{{ game.stats.goldEarned }},
 					{{ game.stats.wardPlaced }},
-					{{ game.stats.championsKilled }},
+					{{ game.stats.championsKilled === "" ? "0": game.stats.championsKilled }},
 					{{ game.stats.numDeaths }},
 					{{ game.stats.assists }},
 					{{ game.stats.timePlayed }},
